@@ -40,6 +40,11 @@
             <div id="wrong">
                 <img id="photoWrong" src="img/wrong.png" />
             </div>
+            <div id="retry">
+                <br/>
+                <br/>
+                <img id="photoRetry" src="img/retry.png" />
+            </div>
         </div>
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
@@ -50,15 +55,25 @@
             $(document).ready(function() {
                 $("div#correct").hide();
                 $("div#wrong").hide();
+                $("div#retry").hide();
 
                 $("img#photoJames").click(function(){
                     $("div#faces").hide();
                     $("div#correct").show();
+                    $("div#retry").show();
                 });
 
                 $("img#photoRita").click(function(){
                     $("div#faces").hide();
                     $("div#wrong").show();
+                    $("div#retry").show();
+                });
+
+                $("img#photoRetry").click(function(){
+                    $("div#faces").show();
+                    $("div#correct").hide();
+                    $("div#wrong").hide();
+                    $("div#retry").hide();
                 });
             });
         </script>
