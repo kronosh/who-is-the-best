@@ -23,20 +23,44 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Who is the best?</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is All Good</p>
+        <div style="text-align: center;">
+            <h1>Who is the best?</h1>
+            <br />
+            <br />
+            <div id="faces">
+                <img id="photoJames" src="img/james.jpg" />
+                <img id="photoRita" src="img/rita.jpg" />
+            </div>
+            <div id="correct">
+                <img id="photoCorrect" src="img/correct.jpg" />
+            </div>
+            <div id="wrong">
+                <img id="photoWrong" src="img/wrong.jpg" />
             </div>
         </div>
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript">
             app.initialize();
+
+            $(document).ready(function() {
+                $("div#correct").hide();
+                $("div#wrong").hide();
+
+                $("img#photoJames").click(function(){
+                    $("div#faces").hide();
+                    $("div#correct").show();
+                });
+
+                $("img#photoRita").click(function(){
+                    $("div#faces").hide();
+                    $("div#wrong").show();
+                });
+            });
         </script>
     </body>
 </html>
