@@ -27,6 +27,8 @@
     </head>
     <body>
         <div style="text-align: center;">
+            <br />
+            <br />
             <h1>Who is the best?</h1>
             <br />
             <br />
@@ -39,6 +41,14 @@
             </div>
             <div id="wrong">
                 <img id="photoWrong" src="img/wrong.png" />
+            </div>
+            <div id="however">
+                <img id="photoHowever" src="img/however.png" />
+            </div>
+            <div id="heart">
+                <h1>I Really Like You</h1>
+                <br />
+                <img src="img/heart.png" />
             </div>
             <div id="retry">
                 <br/>
@@ -56,6 +66,8 @@
                 $("div#correct").hide();
                 $("div#wrong").hide();
                 $("div#retry").hide();
+                $("div#however").hide();
+                $("div#heart").hide();
 
                 $("img#photoJames").click(function(){
                     $("div#faces").hide();
@@ -67,6 +79,7 @@
                     $("div#faces").hide();
                     $("div#wrong").show();
                     $("div#retry").show();
+                    $("div#however").show();
                 });
 
                 $("img#photoRetry").click(function(){
@@ -74,6 +87,16 @@
                     $("div#correct").hide();
                     $("div#wrong").hide();
                     $("div#retry").hide();
+                    $("div#however").hide();
+                    $("div#heart").hide();
+                });
+
+                $("img#photoHowever").click(function(){
+                    $("div#heart").show();
+                    $("div#correct").hide();
+                    $("div#wrong").hide();
+                    $("div#retry").show();
+                    $("div#however").hide();
                 });
             });
         </script>
