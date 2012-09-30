@@ -22,43 +22,49 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.1.1.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Who is the best?</title>
     </head>
     <body>
-        <div style="text-align: center;">
-            <br />
-            <br />
-            <h1>Who is the best?</h1>
-            <br />
-            <br />
-            <div id="faces">
-                <img id="photoJames" src="img/james.jpg" />
-                <img id="photoRita" src="img/rita.jpg" />
-            </div>
-            <div id="correct">
-                <img id="photoCorrect" src="img/correct.png" />
-            </div>
-            <div id="wrong">
-                <img id="photoWrong" src="img/wrong.png" />
-            </div>
-            <div id="however">
-                <img id="photoHowever" src="img/however.png" />
-            </div>
-            <div id="heart">
-                <h1>I Really Like You</h1>
-                <br />
-                <img src="img/heart.png" />
-            </div>
-            <div id="retry">
-                <br/>
-                <br/>
-                <img id="photoRetry" src="img/retry.png" />
-            </div>
-        </div>
+        <div class="app" data-role="page">
+
+            <div data-role="header">
+                <h1>Who is the Best?</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">
+                <div id="faces">
+                    <img id="photoJames" src="img/james.jpg" />
+                    <img id="photoRita" src="img/rita.jpg" />
+                </div>
+                <div id="correct">
+                    <img id="photoCorrect" src="img/correct.png" />
+                </div>
+                <div id="wrong">
+                    <img id="photoWrong" src="img/wrong.png" />
+                </div>
+                <div id="however">
+                    <img id="photoHowever" src="img/however.png" />
+                </div>
+                <div id="heart">
+                    <h1>I Really Like You</h1>
+                    <br />
+                    <img src="img/heart.png" />
+                </div>
+                <div id="retry">
+                    <br/>
+                    <br/>
+                    <img id="photoRetry" src="img/retry.png" />
+                </div>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
         <script type="text/javascript">
             app.initialize();
 
