@@ -1,70 +1,68 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/themes/default/jquery.mobile-1.1.1.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Who is the best?</title>
     </head>
     <body>
-        <div class="app" data-role="page">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Who is the best?</a>
+            </div>
+        </div>
 
-            <div data-role="header">
-                <h1>Who is the Best?</h1>
-            </div><!-- /header -->
+        <div id="faces" class="row-fluid">
+            <div class="span6">
+                <img id="photoJames" src="img/james.jpg" />
+            </div>
+            <div class="span6">
+                <img id="photoRita" src="img/rita.jpg" />
+            </div>
+        </div>
 
-            <div data-role="content">
-                <div id="faces">
-                    <img id="photoJames" src="img/james.jpg" />
-                    <img id="photoRita" src="img/rita.jpg" />
-                </div>
-                <div id="correct">
-                    <img id="photoCorrect" src="img/correct.png" />
-                </div>
-                <div id="wrong">
-                    <img id="photoWrong" src="img/wrong.png" />
-                </div>
-                <div id="however">
-                    <img id="photoHowever" src="img/however.png" />
-                </div>
-                <div id="heart">
-                    <h1>I Really Like You</h1>
-                    <br />
-                    <img src="img/heart.png" />
-                </div>
-                <div id="retry">
-                    <br/>
-                    <br/>
-                    <img id="photoRetry" src="img/retry.png" />
-                </div>
-            </div><!-- /content -->
 
-        </div><!-- /page -->
+        <div id="correct" class="row-fluid">
+            <div class="span12">
+                <img id="photoCorrect" src="img/correct.png" />
+            </div>
+        </div>
+
+        <div id="wrong" class="row-fluid">
+            <div class="span12">
+                <img id="photoWrong" src="img/wrong.png" />
+            </div>
+        </div>
+
+        <div id="however" class="row-fluid">
+            <div class="span12">
+                <img id="photoHowever" src="img/however.png" />
+            </div>
+        </div>
+
+        <div id="heart" class="row-fluid">
+            <div class="span12">
+                <h1>I Really Like You</h1>
+                <br />
+                <img src="img/heart.png" />
+            </div>
+        </div>
+
+        <div id="retry" class="row-fluid">
+            <div class="span12">
+                <br/>
+                <br/>
+                <img id="photoRetry" src="img/retry.png" />
+            </div>
+        </div>
 
         <script type="text/javascript" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript">
             app.initialize();
 
